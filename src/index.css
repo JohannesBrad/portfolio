@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", sans-serif;
+}
+
+@layer components {
+  .card-style {
+    @apply bg-[#161616] border border-[#393939] p-6 rounded-xl;
+  }
+}
+/* src: url(../public/fonts/Geist-Black.ttf) format("truetype");  */
+/* Black */
+@font-face {
+  font-family: "Geist";
+  font-style: black;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/fonts/Geist-Black.ttf) format("truetype");
+}
+
+/* Bold */
+@font-face {
+  font-family: "Geist";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Geist-Bold.ttf") format("truetype");
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Geist";
+  font-style: extrabold;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Geist-ExtraBold.ttf") format("truetype");
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: "Geist";
+  font-style: extralight;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/fonts/Geist-ExtraLight.ttf") format("truetype");
+}
+
+/* Light */
+@font-face {
+  font-family: "Geist";
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/Geist-Light.ttf") format("truetype");
+}
+
+/* Medium */
+@font-face {
+  font-family: "Geist";
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Geist-Medium.ttf") format("truetype");
+}
+
+/* Regular */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Geist-Regular.ttf") format("truetype");
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Geist";
+  font-style: semibold;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Geist-SemiBold.ttf") format("truetype");
+}
+
+/* Thin */
+@font-face {
+  font-family: "Geist";
+  font-style: thin;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/fonts/Geist-Thin.ttf") format("truetype");
+}

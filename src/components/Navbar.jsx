@@ -28,10 +28,10 @@ export const Navbar = () => {
   const [linkActive, setLinkActive] = useState("home");
   return (
     <>
-      <div className="w-full bg-[#18181b] text-white fixed border-b  border-gray-500/40 px-8">
+      <div className="w-full bg-[#18181b] text-white fixed border-b  border-[#393939] px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold">Johannes B.</h1>
+            <h1 className="text-3xl font-medium">Johannes B.</h1>
             <nav>
               <ul className="flex">
                 {links.map((item) => {
@@ -39,10 +39,10 @@ export const Navbar = () => {
                   return (
                     <li
                       key={item.section}
-                      className={`px-6 border-b-2 transition-all duration-300 ${
+                      className={`px-6 border-b-2 transition-all duration-300 cursor-pointer ${
                         linkActive === item.section
-                          ? "border-indigo-500 text-white bg-neutral-800 "
-                          : "border-transparent hover:border-indigo-500  hover:text-indigo-500 text-gray-400"
+                          ? "border-blue-500 text-white bg-neutral-800 "
+                          : "border-transparent hover:border-blue-500  hover:text-blue-500 text-gray-400"
                       }`}
                     >
                       <Link
@@ -50,8 +50,9 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         duration={700}
+                        offset={-80}
                         onSetActive={() => setLinkActive(item.section)}
-                        className="py-7  block"
+                        className="py-6  block"
                       >
                         {item.link}
                       </Link>
