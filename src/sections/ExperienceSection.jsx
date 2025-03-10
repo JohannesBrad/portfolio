@@ -67,7 +67,7 @@ export const ExperienceSection = () => {
       >
         <SectionTitle title="Experiencia" />
 
-        <div className="max-w-7xl mx-auto ">
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col py-6 gap-6">
             {experiences.map((item) => {
               return (

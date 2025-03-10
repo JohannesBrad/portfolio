@@ -1,7 +1,8 @@
 //import { ChevronRight } from "lucide-react";
 import React from "react";
 import { SectionTitle } from "../components/SectionTitle";
-//import { FaLinkedin } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const skill = [
   { name: "HTML", color: "text-orange-400 bg-orange-900/20" },
@@ -56,8 +57,28 @@ export const AboutSection = () => {
                 })}
               </ul>
 
-              <div>
+              <div className="flex items-center gap-3">
                 <p className="text-blue-500 py-4">Mis links</p>
+                <a
+                  href="https://github.com/JohannesBrad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-gray-400 hover:text-white text-xl"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tu-perfil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-gray-400 hover:text-white text-xl"
+                  />
+                </a>
               </div>
             </div>
             <div className="flex flex-col md:w-1/4 p-6 card-style">

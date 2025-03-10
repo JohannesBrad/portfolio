@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <>
       <section
-        id="home"
+        id="inicio"
         className="px-8 h-screen 2xl:h-[48rem]  flex items-center justify-center"
       >
         <div className="max-w-7xl text-center md:text-left">
