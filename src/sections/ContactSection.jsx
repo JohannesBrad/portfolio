@@ -15,7 +15,7 @@ export const ContactSection = () => {
             <article className="w-full pb-6">
               <div className="flex justify-between items-center pb-2">
                 <h4 className="font-bold text-xl">
-                  ¡Envíame un correo electrónico si quieres conectarte!
+                  ¡Envíame un correo electrónico si quieres contactárme!
                 </h4>
               </div>
               <div className="flex justify-between items-center pb-2">

@@ -60,11 +60,7 @@ const experiences = [
 export const ExperienceSection = () => {
   return (
     <>
-      <section
-        id="experiencia"
-        /* className="px-8 2xl:h-[48rem] md:h-screen border-b border-gray-500/40" */
-        className="px-8"
-      >
+      <section id="experiencia" className="px-8">
         <SectionTitle title="Experiencia" />
 
         <div className="max-w-7xl mx-auto">
@@ -80,7 +76,6 @@ export const ExperienceSection = () => {
                     <h5 className="text-xl font-medium pb-2 text-blue-400">
                       {item.title}
                     </h5>
-                    {/* <span>{item.company}</span> */}
                   </div>
 
                   <p className="text-sm font-light md:text-lg leading-7 pb-3 md:pb-6 text-[#a3a3a3]">

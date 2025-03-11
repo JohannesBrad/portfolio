@@ -8,7 +8,7 @@ const links = [
   },
   {
     section: "sobre-mi",
-    link: "Sobre mi",
+    link: "Sobre mí",
   },
   {
     section: "proyectos",

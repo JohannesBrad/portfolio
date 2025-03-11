@@ -27,38 +27,38 @@ export const AboutSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row py-6 gap-8">
             <div className="md:w-3/4 p-6 card-style">
-              <p className="text-sm font-light md:text-lg leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
-                Soy Johannes Berrocal, un desarrollador frontend apasionado por
-                crear sitios web modernos, accesibles y altamente optimizados.
-                Me especializo en transformar ideas en experiencias digitales
-                impactantes, combinando diseño intuitivo, rendimiento eficiente
-                y código limpio.
+              <p className="text-sm font-light md:text-xl leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
+                Soy Johannes, desarrollador frontend apasionado por crear sitios
+                web modernos, accesibles y optimizados. Me especializo en
+                transformar ideas en experiencias digitales, combinando diseño
+                intuitivo, rendimiento eficiente y código limpio.
               </p>
               <h3 className="text-lg font-light md:text-xl leading-7 mb-2">
                 Mi enfoque en el desarrollo web:
               </h3>
-              <ul>
+              <ul className="">
                 {[
                   "Diseño y desarrollo de interfaces con tecnologías modernas como React, TailwindCSS.",
                   "Optimización de performance, garantizando que las aplicaciones sean rápidas, responsivas y accesibles.",
                   "Experiencia de usuario (UX), asegurando que cada interacción sea fluida.",
-                  "Buenas prácticas en desarrollo web, aplicando principios como arquitectura escalable, mantenibilidad.",
+                  "Buenas prácticas en desarrollo web, aplicando principios como arquitectura escalable y mantenibilidad.",
                   "Consumo de APIs y manejo de estado, integrando datos dinámicos de manera eficiente en aplicaciones frontend.",
                 ].map((item, index) => {
                   return (
                     <li
                       key={index}
-                      className="text-sm md:text-lg font-light leading-7 text-[#a3a3a3] flex items-center gap-1"
+                      className="list-disc text-sm md:text-xl font-light leading-7 text-[#a3a3a3] flex items-center gap-1"
                     >
-                      {/* <ChevronRight size="16px" color="#a3a3a3" /> {item} */}
-                      {item}
+                      - {item}
                     </li>
                   );
                 })}
               </ul>
 
               <div className="flex items-center gap-3">
-                <p className="text-blue-500 py-4">Mis links</p>
+                <p className="text-blue-500 py-4 md:text-lg">
+                  Conoce un poco más:
+                </p>
                 <a
                   href="https://github.com/JohannesBrad"
                   target="_blank"
