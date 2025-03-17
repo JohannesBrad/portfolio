@@ -6,63 +6,22 @@ import {
   faChartLine,
   faMountain,
 } from "@fortawesome/free-solid-svg-icons";
-
 import { SectionTitle } from "../components/SectionTitle";
 
-const projects = [
-  {
-    id: 1,
-    title: "Marcobre",
-    icon: faIndustry,
-    description:
-      "Renovación total del sitio web corporativo de Marcobre. Desarrollé la plataforma en React y , implementando un CMS personalizado con un dashboard para la gestión dinámica del contenido. Esto permitió a la empresa actualizar su información de manera sencilla y eficiente.",
-    technology: ["React", "TailwindCSS", "CMS personalizado", "API Rest"],
-  },
-  {
-    id: 2,
-    title: "NetworkServices",
-    icon: faServer,
-    description:
-      "Desarrollo de un sitio web moderno y responsivo para Networks Services, una empresa especializada en instalación de cableado estructurado y mantenimiento de servidores. Implementé la plataforma utilizando React y TailwindCSS, optimizando el rendimiento y la experiencia de usuario para facilitar la presentación de sus servicios.",
-    technology: ["React", "TailwindCSS", "JavaScript", "Vite"],
-  },
-  {
-    id: 3,
-    title: "Brain Consulting",
-    icon: faChartLine,
-    description:
-      "Creación de un sitio web profesional en WordPress para Brain Consulting, una consultora de TI. Diseñé una interfaz intuitiva y optimizada, asegurando una navegación fluida y una presentación clara de sus servicios. Se implementaron mejoras en SEO y optimización de carga para una mejor visibilidad en buscadores.",
-    technology: ["Wordpress", "Elementor", "Figma"],
-  },
-  /* 
-  {
-    id: 4,
-    title: "Mannesi",
-    image: "https://picsum.photos/200/300",
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. ",
-  },
-   {
-    id: 4,
-    title: "BR-Blue",
-    image: "https://picsum.photos/200/300",
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own. ",
-  }, */
-];
-
-export const ProjectsSection = () => {
+export const ProjectsSection = ({ data }) => {
+  if (!data || !data.content) return null;
+  const { content } = data;
   return (
     <>
-      <section id="proyectos" className="px-8 2xl:h-[48rem] md:h-screen">
+      <section id="proyectos" className="px-8 2xl:h-[48rem]">
         <SectionTitle title="Proyectos" />
 
         <div className="max-w-7xl mx-auto ">
           <div className="flex flex-col md:flex-row py-6 gap-8 flex-wrap justify-start">
-            {projects.map((item) => {
+            {content.itemsList.map((item, index) => {
               return (
                 <article
-                  key={item.id}
+                  key={index}
                   className="w-full md:w-[25rem] flex p-6 card-style"
                 >
                   <div className="py-4">

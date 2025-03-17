@@ -4,22 +4,8 @@ import { SectionTitle } from "../components/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const skill = [
-  { name: "HTML", color: "text-orange-400 bg-orange-900/20" },
-  { name: "CSS", color: "text-blue-400 bg-blue-900/20" },
-  { name: "JavaScript", color: "text-yellow-400 bg-yellow-900/20" },
-  { name: "React", color: "text-sky-400 bg-sky-900/20" },
-  { name: "Git", color: "text-red-400 bg-red-900/20" },
-  { name: "WordPress", color: "text-indigo-400 bg-indigo-900/20" },
-  { name: "Tailwind CSS", color: "text-teal-400 bg-teal-900/20" },
-  { name: "Bootstrap", color: "text-purple-400 bg-purple-900/20" },
-  { name: "Linux", color: "text-gray-300 bg-gray-800/20" },
-  { name: "MySQL", color: "text-cyan-400 bg-cyan-900/20" },
-  { name: "Vtex", color: "text-pink-400 bg-pink-900/20" },
-  { name: "AWS", color: "text-amber-300 bg-amber-800/20" },
-];
-
-export const AboutSection = () => {
+export const AboutSection = ({ data }) => {
+  const { content } = data;
   return (
     <>
       <section id="sobre-mi" className="px-8 2xl:h-[48rem] md:h-screen">
@@ -28,22 +14,13 @@ export const AboutSection = () => {
           <div className="flex flex-col md:flex-row py-6 gap-8">
             <div className="md:w-3/4 p-6 card-style">
               <p className="text-sm font-light md:text-xl leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
-                Soy Johannes, desarrollador frontend apasionado por crear sitios
-                web modernos, accesibles y optimizados. Me especializo en
-                transformar ideas en experiencias digitales, combinando diseño
-                intuitivo, rendimiento eficiente y código limpio.
+                {content.description}
               </p>
               <h3 className="text-lg font-light md:text-xl leading-7 mb-2">
                 Mi enfoque en el desarrollo web:
               </h3>
               <ul className="">
-                {[
-                  "Diseño y desarrollo de interfaces con tecnologías modernas como React, TailwindCSS.",
-                  "Optimización de performance, garantizando que las aplicaciones sean rápidas, responsivas y accesibles.",
-                  "Experiencia de usuario (UX), asegurando que cada interacción sea fluida.",
-                  "Buenas prácticas en desarrollo web, aplicando principios como arquitectura escalable y mantenibilidad.",
-                  "Consumo de APIs y manejo de estado, integrando datos dinámicos de manera eficiente en aplicaciones frontend.",
-                ].map((item, index) => {
+                {content.detail.map((item, index) => {
                   return (
                     <li
                       key={index}
@@ -54,7 +31,6 @@ export const AboutSection = () => {
                   );
                 })}
               </ul>
-
               <div className="flex items-center gap-3">
                 <p className="text-blue-500 py-4 md:text-lg">
                   Conoce un poco más:
@@ -84,7 +60,7 @@ export const AboutSection = () => {
             <div className="flex flex-col md:w-1/4 p-6 card-style">
               <h3 className="text-lg font-semibold mb-2">Skill</h3>
               <div className="flex flex-wrap gap-3">
-                {skill.map(({ name, color }) => (
+                {content.skills.map(({ name, color }) => (
                   <span
                     key={name}
                     className={`px-3 py-1 rounded-full font-light text-sm ${color}`}

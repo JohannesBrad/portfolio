@@ -77,7 +77,6 @@ export const Navbar = () => {
                     }`}
               >
                 {links.map((item) => {
-                  console.log(item);
                   return (
                     <li
                       key={item.section}
@@ -121,7 +120,6 @@ export const Navbar = () => {
             <nav>
               <ul className="hidden md:flex ">
                 {links.map((item) => {
-                  console.log(item);
                   return (
                     <li
                       key={item.section}
