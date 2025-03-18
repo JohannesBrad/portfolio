@@ -14,7 +14,8 @@ export const portfolioData = [
       title: "Hola, soy Johannes.",
       subtitle: "Frontend Developer",
       description:
-        "Diseño y desarrollo interfaces web rápidas, accesibles y escalables, optimizadas para rendimiento y experiencia de usuario. He trabajado en diversos proyectos, creando soluciones digitales eficientes para empresas que buscan destacar en la web.",
+        /* "Desarrollo interfaces web rápidas, accesibles y escalables, optimizadas para rendimiento y experiencia de usuario. He trabajado en diversos proyectos, creando soluciones digitales eficientes para empresas que buscan destacar en la web.", */
+        "Desarrollo interfaces web rápidas, accesibles y escalables, optimizadas para rendimiento y experiencia de usuario.",
     },
   },
   {
@@ -53,19 +54,20 @@ export const portfolioData = [
     content: {
       title: "Proyectos",
       itemsList: [
-        {
+        /*         {
           title: "Marcobre",
           icon: faIndustry,
           description:
             "Renovación total del sitio web corporativo de Marcobre. Desarrollé la plataforma en React e implementé un CMS personalizado con un dashboard para la gestión dinámica del contenido.",
           technology: ["React", "TailwindCSS", "CMS personalizado", "API Rest"],
-        },
+        }, */
         {
-          title: "NetworkServices",
+          title: "Networks Services",
           icon: faServer,
           description:
             "Desarrollo de un sitio web moderno y responsivo para Networks Services, una empresa especializada en instalación de cableado estructurado y mantenimiento de servidores.",
           technology: ["React", "TailwindCSS", "JavaScript", "Vite"],
+          link: "https://www.networksservices.pe/",
         },
         {
           title: "Brain Consulting",
@@ -73,6 +75,7 @@ export const portfolioData = [
           description:
             "Creación de un sitio web profesional en WordPress para Brain Consulting, una consultora de TI. Diseñé una interfaz intuitiva y optimizada, asegurando una navegación fluida.",
           technology: ["WordPress", "Elementor", "Figma"],
+          link: "https://brainconsulting.pe/",
         },
       ],
     },
@@ -90,9 +93,9 @@ export const portfolioData = [
             "Planificación de proyectos, coordinación de equipo y desarrollo de soluciones digitales.",
           period: "Jul. 2022 – Feb. 2024",
           company: "Coolbox",
-          image: "https://picsum.photos/200/300", // Reemplazar con una imagen real
+          //image: "https://picsum.photos/200/300", // Reemplazar con una imagen real
           description:
-            "Gestioné la planificación de proyectos, capacité a nuevos miembros del equipo en Vtex IO y desarrollé componentes en React. Analicé métricas clave para optimizar el rendimiento del sitio web.",
+            "Planificación y gestión de proyectos, incluyendo la capacitación de nuevos integrantes en Vtex IO y el desarrollo de componentes en React. Análisis de métricas clave para mejorar el rendimiento y la experiencia del usuario en el sitio web.",
           skills: [
             "Vtex IO",
             "React",
@@ -108,9 +111,9 @@ export const portfolioData = [
             "Mantenimiento de sitio web y desarrollo de componentes UI.",
           period: "Mar. 2021 – Jun. 2022",
           company: "Coolbox",
-          image: "https://picsum.photos/200/300",
+          //image: "https://picsum.photos/200/300",
           description:
-            "Desarrollé y mantuve el sitio web de Coolbox, implementando componentes en React y optimizando el rendimiento con Node.js y Git.",
+            "Desarrollo y mantenimiento de la tienda eCommerce de Coolbox, implementando componentes en React según los requerimientos del negocio y optimizando su rendimiento para una mejor experiencia de usuario.",
           skills: [
             "Vtex IO",
             "React",
@@ -127,10 +130,18 @@ export const portfolioData = [
             "Desarrollo web personalizado para empresas e instituciones.",
           period: "Jul. 2020 – Feb. 2021",
           company: "Freelance",
-          image: "https://picsum.photos/200/300",
+          //image: "https://picsum.photos/200/300",
           description:
-            "Desarrollé sitios web para clientes, incluyendo proyectos gubernamentales como 'El País Que Queremos' y BrainConsulting, utilizando infraestructura AWS.",
-          skills: ["React", "AWS", "Diseño Web", "JavaScript", "UI/UX"],
+            "Desarrollo de sitios web para clientes, pequeñas empresas y emprendimientos, brindando soluciones personalizadas. Colaboración en el proyecto gubernamental 'El País Que Queremos' y en la creación del sitio web de BrainConsulting.",
+          skills: [
+            "React",
+            "AWS",
+            "Diseño Web",
+            "Wordpress",
+            "JavaScript",
+            "UI/UX",
+            "Git",
+          ],
         },
         {
           id: 4,
@@ -139,16 +150,10 @@ export const portfolioData = [
             "Desarrollo de sitios web e implementación de campañas de marketing.",
           period: "Feb. 2020 – Jun. 2020",
           company: "Wunderman Thompson Perú",
-          image: "https://picsum.photos/200/300",
+          //image: "https://picsum.photos/200/300",
           description:
-            "Desarrollé e implementé el sitio web de Movistar, incluyendo el desarrollo frontend para la campaña de marketing MAIA.",
-          skills: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Campañas de Marketing",
-          ],
+            "Desarrollo e implementacion el sitio web de Movistar, incluyendo el desarrollo frontend para las campañas de marketing.",
+          skills: ["HTML", "CSS", "JavaScript", "Sass", "Git"],
         },
       ],
     },

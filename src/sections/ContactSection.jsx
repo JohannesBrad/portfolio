@@ -20,7 +20,9 @@ export const ContactSection = () => {
               </div>
               <div className="flex justify-between items-center pb-2">
                 <h5 className="text-xl font-medium pb-2 text-blue-400">
-                  b23johannes@gmail.com
+                  <a href="mailto:b23johannes@gmail.com">
+                    b23johannes@gmail.com
+                  </a>
                 </h5>
                 {/* <span>{item.company}</span> */}
               </div>
