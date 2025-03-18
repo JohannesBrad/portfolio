@@ -24,7 +24,7 @@ export const ExperienceSection = ({ data }) => {
                     </h5>
                   </div>
 
-                  <p className="text-sm font-light md:text-lg leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
+                  <p className="text-md font-light md:text-lg leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
                     {item.description}
                   </p>
                   <div className="flex flex-wrap gap-2 py-2">

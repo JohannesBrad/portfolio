@@ -13,7 +13,7 @@ export const AboutSection = ({ data }) => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row py-6 gap-8">
             <div className="md:w-3/4 p-6 card-style">
-              <p className="text-sm font-light md:text-xl leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
+              <p className="text-md font-light md:text-xl leading-7 pb-3 md:pb-6 text-[#a3a3a3]">
                 {content.description}
               </p>
               <h3 className="text-lg font-light md:text-xl leading-7 mb-2">
@@ -24,7 +24,7 @@ export const AboutSection = ({ data }) => {
                   return (
                     <li
                       key={index}
-                      className="list-disc text-sm md:text-xl font-light leading-7 text-[#a3a3a3] flex items-center gap-1"
+                      className="list-disc text-md md:text-xl font-light leading-7 text-[#a3a3a3] flex items-center gap-1"
                     >
                       - {item}
                     </li>

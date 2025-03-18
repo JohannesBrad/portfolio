@@ -34,12 +34,12 @@ export const ProjectsSection = ({ data }) => {
                         {item.title}
                       </h3>
                       <div className="flex gap-2 py-1">
-                        <span className="text-blue-300 py-1 rounded-full font-light text-sm ">
+                        <span className="text-blue-300 py-1 rounded-full font-light text-md ">
                           {" "}
                           {item.technology.join(" - ")}
                         </span>
                       </div>
-                      <p className="text-sm font-light md:text-lg leading-7 pb-3 md:pt-2 text-[#a3a3a3]">
+                      <p className="text-md font-light md:text-lg leading-7 pb-3 md:pt-2 text-[#a3a3a3]">
                         {item.description}
                       </p>
                     </div>

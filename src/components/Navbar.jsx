@@ -41,7 +41,7 @@ export const Navbar = () => {
             <nav>
               {/* Menu Mobile */}
               <div
-                className="bg-neutral-800 border border-[#393939] rounded-md w-12 h-12 flex flex-col items-center justify-center md:hidden cursor-pointer relative my-3"
+                className=" rounded-md w-12 h-12 flex flex-col items-center justify-center md:hidden cursor-pointer relative my-3"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <span
@@ -109,68 +109,3 @@ export const Navbar = () => {
     </>
   );
 };
-
-/* 
-
-
-    <div className="w-full bg-[#18181b] text-white fixed border-b  border-[#393939] px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-medium">Johannes B.</h1>
-            <nav>
-              <ul className="hidden md:flex ">
-                {links.map((item) => {
-                  return (
-                    <li
-                      key={item.section}
-                      className={`px-6 border-b-2 transition-all duration-300 cursor-pointer ${
-                        linkActive === item.section
-                          ? "border-blue-500 text-white bg-neutral-800 "
-                          : "border-transparent hover:border-blue-500 hover:text-blue-500 text-gray-400"
-                      }`}
-                    >
-                      <Link
-                        to={item.section}
-                        spy={true}
-                        smooth={true}
-                        duration={700}
-                        offset={-80}
-                        onSetActive={() => setLinkActive(item.section)}
-                        className="py-6  block"
-                      >
-                        {item.link}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-              
-              <div
-                className="bg-blue-500 w-12 h-12 flex flex-col items-center justify-center md:hidden cursor-pointer relative"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                <span
-                  className={`absolute w-8 h-[4px] bg-white rounded transition-transform duration-300 ${
-                    isOpen ? "rotate-45 translate-y-0" : "-translate-y-2"
-                  }`}
-                ></span>
-
-                <span
-                  className={`absolute w-8 h-[4px] bg-white rounded transition-opacity duration-300 ${
-                    isOpen ? "opacity-0" : "opacity-100"
-                  }`}
-                ></span>
-
-                <span
-                  className={`absolute w-8 h-[4px] bg-white rounded transition-transform duration-300 ${
-                    isOpen ? "-rotate-45 translate-y-0" : "translate-y-2"
-                  }`}
-                ></span>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-
-*/
